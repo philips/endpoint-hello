@@ -12,5 +12,5 @@ go install code.google.com/p/rsc/devweb
 ./bin/devweb -addr ":8080" github.com/philips/endpoint-hello/dev
 ```
 
-- API: `http://localhost:8080/\_ah/api/discovery/v1/apis/greeting/v1/rest`
-- List: `http://localhost:8080/\_ah/api/greeting/v1/greetings`
+- API: `http://localhost:8080/_ah/api/discovery/v1/apis/greeting/v1/rest`
+- List: `http://localhost:8080/_ah/api/greeting/v1/greetings`
