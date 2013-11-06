@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 	"github.com/rwl/go-endpoints/endpoints"
@@ -54,7 +55,14 @@ func (gs *GreetingService) List(
 			req.Limit = 10
 		}
 
-		greets := make([]*Greeting, 0, req.Limit)
+		greets := make([]*Greeting, 10)
+
+		for i, _ := range greets {
+			greets[i] = &Greeting{}
+			greets[i].Author = fmt.Sprintf("Name %v", i)
+			greets[i].Content = fmt.Sprintf("Message %v", i)
+			greets[i].Date = time.Now()
+		}
 
 		resp.Items = greets
 		return nil
