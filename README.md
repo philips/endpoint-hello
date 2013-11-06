@@ -1,6 +1,6 @@
 ## Endpoint Hello
 
-Example of using [discovery APIs] outside of Google App Engine.
+Example of using [discovery APIs][discovery] outside of Google App Engine.
 
 [discovery]: https://developers.google.com/discovery/v1/using
 
